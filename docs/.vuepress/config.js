@@ -6,7 +6,7 @@ export default defineUserConfig({
   lang: 'en-US',
   title: 'Ibrahim Qadr - Software Engineer',
   description: 'Backend Developer and Software Engineer specializing in Laravel, PHP, and API development',
-  
+
   // Head configuration for better SEO and social sharing
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
