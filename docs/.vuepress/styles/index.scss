@@ -1,0 +1,340 @@
+/* Clean Minimal Portfolio - Laravel/API Focused */
+
+:root {
+  /* Clean Minimal Color Scheme with Sky Blue Body */
+  --primary-color: #2563eb;        /* blue-600 */
+  --secondary-color: #64748b;      /* slate-500 */
+  --background-color: #87ceeb;     /* sky blue */
+  --accent-color: #f59e0b;         /* amber-500 */
+  --text-color: #111827;           /* slate-900 */
+  
+  /* Additional shades */
+  --primary-light: #3b82f6;        /* blue-500 */
+  --primary-dark: #1d4ed8;         /* blue-700 */
+  --secondary-light: #94a3b8;      /* slate-400 */
+  --accent-light: #fbbf24;         /* amber-400 */
+  --accent-dark: #d97706;          /* amber-600 */
+  
+  /* Clean backgrounds with enhanced contrast on sky blue */
+  --bg-primary: rgba(255, 255, 255, 0.95);  /* semi-transparent white */
+  --bg-secondary: rgba(241, 245, 249, 0.9); /* semi-transparent slate-100 */
+  --bg-tertiary: rgba(226, 232, 240, 0.8);  /* semi-transparent slate-200 */
+  
+  /* Enhanced shadows for better contrast on sky blue */
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.15), 0 2px 4px -1px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.15), 0 4px 6px -2px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.15), 0 10px 10px -5px rgba(0, 0, 0, 0.08);
+  
+  /* Laravel-specific colors */
+  --laravel-red: #ff2d20;
+  --laravel-orange: #ff6b35;
+  --api-green: #10b981;
+  --database-blue: #3b82f6;
+}
+
+/* Global clean styling */
+* {
+  transition: all 0.2s ease-in-out;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--text-color);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  line-height: 1.6;
+}
+
+/* Clean navbar */
+.navbar {
+  background: rgba(255, 255, 255, 0.95) !important;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(12px);
+}
+
+.navbar-brand {
+  font-weight: 700;
+  color: var(--primary-color) !important;
+  font-size: 1.25rem;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-items a {
+  color: #374151 !important;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.navbar-items a:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar-items a.router-link-active {
+  color: var(--primary-color) !important;
+  font-weight: 600;
+}
+
+.navbar-items a::after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--accent-color);
+  transition: all 0.2s ease;
+  transform: translateX(-50%);
+}
+
+.navbar-items a:hover::after,
+.navbar-items a.router-link-active::after {
+  width: 100%;
+}
+
+/* Clean hero section */
+.home .hero {
+  background: linear-gradient(135deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  padding: 4rem 2rem;
+}
+
+.home .hero h1 {
+  color: var(--text-color) !important;
+  font-size: 3rem !important;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.home .hero .description {
+  color: var(--secondary-color) !important;
+  font-size: 1.25rem !important;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+/* Clean buttons */
+.action-button {
+  background: var(--primary-color) !important;
+  color: white !important;
+  border: none !important;
+  padding: 12px 24px !important;
+  border-radius: 6px !important;
+  font-weight: 600 !important;
+  font-size: 0.95rem !important;
+  box-shadow: var(--shadow-md) !important;
+  transition: all 0.2s ease !important;
+}
+
+.action-button:hover {
+  background: var(--primary-dark) !important;
+  transform: translateY(-1px) !important;
+  box-shadow: var(--shadow-lg) !important;
+}
+
+.action-button.secondary {
+  background: transparent !important;
+  color: var(--primary-color) !important;
+  border: 2px solid var(--primary-color) !important;
+}
+
+.action-button.secondary:hover {
+  background: var(--primary-color) !important;
+  color: white !important;
+}
+
+/* Clean content styling */
+.theme-default-content {
+  background: var(--bg-primary);
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.theme-default-content h1 {
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid var(--primary-color);
+  padding-bottom: 0.5rem;
+}
+
+.theme-default-content h2 {
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 1.75rem;
+  margin: 2rem 0 1rem 0;
+}
+
+.theme-default-content h3 {
+  color: var(--primary-dark);
+  font-weight: 600;
+  font-size: 1.25rem;
+  margin: 1.5rem 0 0.75rem 0;
+}
+
+.theme-default-content p {
+  color: var(--text-color);
+  font-size: 1rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* Clean cards */
+.card {
+  background: var(--bg-primary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-2px);
+  border-color: var(--primary-color);
+}
+
+/* Clean links */
+.theme-default-content a {
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: all 0.2s ease;
+}
+
+.theme-default-content a:hover {
+  color: var(--primary-dark);
+  border-bottom-color: var(--accent-color);
+}
+
+/* Laravel/API specific styling */
+.laravel-badge {
+  background: var(--laravel-red);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.api-badge {
+  background: var(--api-green);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.php-badge {
+  background: #777bb4;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+/* Clean lists */
+.theme-default-content ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.theme-default-content li {
+  position: relative;
+  padding: 0.5rem 0 0.5rem 1.5rem;
+  margin: 0.25rem 0;
+}
+
+.theme-default-content li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  color: var(--accent-color);
+  font-weight: 600;
+}
+
+/* Clean code blocks */
+.theme-default-content code {
+  background: var(--bg-secondary);
+  color: var(--primary-dark);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: 'Monaco', 'Menlo', monospace;
+  font-size: 0.9em;
+  font-weight: 500;
+}
+
+.theme-default-content pre {
+  background: var(--bg-secondary);
+  border: 1px solid var(--bg-tertiary);
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+}
+
+/* Clean tables */
+.theme-default-content table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+}
+
+.theme-default-content th,
+.theme-default-content td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--bg-tertiary);
+}
+
+.theme-default-content th {
+  background: var(--bg-secondary);
+  color: var(--text-color);
+  font-weight: 600;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .home .hero h1 {
+    font-size: 2.25rem !important;
+  }
+  
+  .home .hero .description {
+    font-size: 1.1rem !important;
+  }
+  
+  .theme-default-content {
+    padding: 1rem;
+  }
+}
+
+/* Clean scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary-color);
+}
