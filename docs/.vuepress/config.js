@@ -18,9 +18,10 @@ export default defineUserConfig({
   ],
 
   theme: defaultTheme({
-    // Clean navigation - Home only
+    // Navigation
     navbar: [
       { text: 'Home', link: '/' },
+      { text: 'Projects', link: '/projects/' },
       { 
         text: 'Links', 
         children: [
