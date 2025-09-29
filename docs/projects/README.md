@@ -1,9 +1,9 @@
-# 🚀 Projects
+# Projects
 
 <div class="projects-portfolio">
 
 <div class="project-card">
-<h2>🎫 Laravel Ticket API</h2>
+<h2>Laravel Ticket API</h2>
 <p><strong>GitHub:</strong> <a href="https://github.com/ibrahimsoftware1" target="_blank">github-Repo...</a></p>
 <p>A fully functional RESTful API for managing support tickets in Laravel. The system includes:</p>
 <ul>
@@ -13,7 +13,7 @@
 </div>
 
 <div class="project-card">
-<h2>🍽️ Restaurant Management API</h2>
+<h2>Restaurant Management API</h2>
 <p><strong>GitHub:</strong> <a href="https://github.com/ibrahimsoftware1" target="_blank">github-Repo...</a></p>
 <p>A RESTful API for managing a restaurant's operations including users, roles, tables, categories, menu items, orders, and order items.</p>
 <ul>
@@ -23,7 +23,7 @@
 </div>
 
 <div class="project-card">
-<h2>💬 RESTful Social Media & Chat API with Real-Time Broadcasting</h2>
+<h2>RESTful Social Media & Chat API with Real-Time Broadcasting</h2>
 <p><strong>GitHub:</strong> <a href="https://github.com/ibrahimsoftware1" target="_blank">github-Repo...</a></p>
 <p>A scalable Laravel-based RESTful API for real-time messaging with social features. Built with Laravel Sanctum authentication, Laravel Reverb for WebSocket broadcasting, and comprehensive user management.</p>
 
@@ -58,25 +58,7 @@
   padding: 2rem;
   margin: 2rem 0;
   box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
-  transition: all 0.3s ease;
   color: #2C3E50;
-}
-
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.2);
-  border-color: #2C3E50;
-  background: #7F8C8D;
-  color: #FFFFFF;
-}
-
-.project-card:hover h2,
-.project-card:hover h3 {
-  color: #FFFFFF;
-}
-
-.project-card:hover a {
-  color: #FFFFFF !important;
 }
 
 .project-card h2 {
@@ -107,10 +89,6 @@
   color: #2C3E50;
   text-decoration: none;
   font-weight: 500;
-}
-
-.project-card a:hover {
-  text-decoration: underline;
 }
 
 @media (max-width: 768px) {

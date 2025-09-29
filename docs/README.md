@@ -4,24 +4,24 @@ title: Ibrahim Qadr
 heroText: Ibrahim Qadr
 tagline: Software Engineer
 features:
-  - title: ⚡ Laravel Framework
+  - title: Laravel Framework
     details: Expert in building scalable web applications with Laravel, following MVC architecture and best practices
-  - title: 🔗 RESTful API Development
+  - title: RESTful API Development
     details: Specialized in creating robust APIs with proper authentication, validation, and documentation
-  - title: 🗄️ Database Architecture
+  - title: Database Architecture
     details: Proficient in MySQL and Oracle database design, optimization, and complex query development
 footer: Built with VuePress | Ibrahim Qadr - Laravel Developer
 ---
 
 <div class="modern-portfolio">
 
-## 👤 Profile
+## Profile
 
 <div class="profile-card">
 A passionate and detail-oriented Backend Developer and Software Engineer with strong knowledge in Laravel, PHP, and API development. Skilled in building scalable backend services, testing endpoints using Postman, and working with databases such as MySQL and Oracle. Always eager to learn new technologies, solve complex problems, and contribute to impactful software projects.
 </div>
 
-## 🧠 Skills
+## Skills
 
 <div class="skills-card">
 
@@ -48,14 +48,14 @@ A passionate and detail-oriented Backend Developer and Software Engineer with st
 
 </div>
 
-## 🎓 Education
+## Education
 
 <div class="education-card">
 <h3>Software Engineering</h3>
 <p><strong>College of Engineering | Salahaddin University</strong></p>
 </div>
 
-## 🌍 Languages
+## Languages
 
 <div class="languages-card">
 <ul>
@@ -65,24 +65,20 @@ A passionate and detail-oriented Backend Developer and Software Engineer with st
 </ul>
 </div>
 
-## 📞 Contact & Links
+## Contact & Links
 
 <div class="contact-card">
 <div class="contact-info">
 <div class="contact-item">
-<span class="icon">📱</span>
 <strong>Phone:</strong> 0780 802 9896
 </div>
 <div class="contact-item">
-<span class="icon">✉️</span>
 <strong>Email:</strong> <a href="mailto:ibrahimqadr23@gmail.com">ibrahimqadr23@gmail.com</a>
 </div>
 <div class="contact-item">
-<span class="icon">📍</span>
 <strong>Location:</strong> Erbil-Choman
 </div>
 <div class="contact-item">
-<span class="icon">💻</span>
 <strong>GitHub:</strong> <a href="https://github.com/ibrahimsoftware1" target="_blank">github.com/ibrahimsoftware1</a>
 </div>
 </div>
@@ -98,7 +94,6 @@ A passionate and detail-oriented Backend Developer and Software Engineer with st
   --neutral-light: #BDC3C7;
   --background-light: #ECFOF1;
   --text-dark: #2C3E50;
-  --hover-color: #34495E;
 }
 
 .modern-portfolio {
@@ -120,20 +115,7 @@ A passionate and detail-oriented Backend Developer and Software Engineer with st
   padding: 2rem;
   margin: 2rem 0;
   box-shadow: 0 4px 12px rgba(44, 62, 80, 0.1);
-  transition: all 0.3s ease;
   color: var(--text-dark);
-}
-
-.profile-card:hover,
-.skills-card:hover,
-.education-card:hover,
-.languages-card:hover,
-.contact-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(44, 62, 80, 0.2);
-  border-color: var(--primary-dark);
-  background: #7F8C8D;
-  color: #FFFFFF;
 }
 
 .skills-card h3 {
@@ -168,18 +150,6 @@ A passionate and detail-oriented Backend Developer and Software Engineer with st
   background: #ECFOF1;
   border-radius: 8px;
   border: 2px solid #7F8C8D;
-  transition: all 0.2s ease;
-}
-
-.contact-item:hover {
-  background: #7F8C8D;
-  transform: scale(1.02);
-  color: #FFFFFF;
-  border: 3px solid #2C3E50;
-}
-
-.contact-item:hover a {
-  color: #FFFFFF !important;
 }
 
 .contact-item .icon {
@@ -192,11 +162,6 @@ A passionate and detail-oriented Backend Developer and Software Engineer with st
   color: var(--primary-dark);
   text-decoration: none;
   font-weight: 500;
-}
-
-.contact-item a:hover {
-  color: var(--hover-color);
-  text-decoration: underline;
 }
 
 /* Dark Mode */
@@ -229,11 +194,6 @@ A passionate and detail-oriented Backend Developer and Software Engineer with st
     font-size: 0.9rem;
     flex-wrap: wrap;
     justify-content: flex-start;
-  }
-  
-  .contact-item:hover {
-    border: 2px solid #2C3E50;
-    transform: none;
   }
   
   .contact-item .icon {
